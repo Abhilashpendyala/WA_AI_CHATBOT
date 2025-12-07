@@ -16,9 +16,10 @@ url="https://graph.facebook.com/v22.0/798077006733009/messages"
 payload={
     "messaging product":"whatsapp",
     "to":"918179784745",
-    "type":"text",
-    "text": {"body": first_message}
+    "type":"text",  #type is what kind of message you are sending, audio / text/ image / template
+    "text": {"body": first_message} # the actual message goes into  body. also support links "preview_url"
 }
+
 
 headers = {
     "Authorizatioin": "Bearer {token}",
